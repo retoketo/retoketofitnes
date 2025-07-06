@@ -1,5 +1,3 @@
-<!-- Forzar redeploy visual -->
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -14,45 +12,58 @@
       background: url('logo-retoketofitnes.jpg') no-repeat center center fixed;
       background-size: cover;
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
-      flex-direction: column;
       font-family: Arial, sans-serif;
     }
 
     h1 {
       color: white;
-      font-size: 2.5rem;
-      text-shadow: 2px 2px 4px #000;
-      margin-bottom: 40px;
+      font-size: 48px;
+      text-shadow: 2px 2px 6px #000;
+      animation: aparecer 1.5s ease-in-out infinite alternate;
     }
 
-    .boton-wsp {
-      background-color: #25D366;
-      color: white;
-      font-size: 1.3rem;
-      padding: 15px 25px;
-      border: none;
-      border-radius: 30px;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      box-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+    @keyframes aparecer {
+      from { opacity: 0.1; transform: scale(0.98); }
+      to   { opacity: 1; transform: scale(1); }
+    }
+
+    a.boton-wsp {
+      margin-top: 30px;
       text-decoration: none;
+      color: white;
+      font-size: 24px;
+      font-weight: bold;
+      background-color: #25D366;
+      padding: 20px 30px;
+      border-radius: 40px;
+      display: inline-flex;
+      align-items: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      transition: transform 0.2s;
     }
 
-    .boton-wsp:hover {
-      background-color: #1ebe5d;
-      cursor: pointer;
+    a.boton-wsp:hover {
+      transform: scale(1.05);
+    }
+
+    img.icono-wsp {
+      width: 32px;
+      height: 32px;
+      margin-right: 12px;
     }
   </style>
 </head>
 <body>
+
   <h1>Bienvenidos a Retoketofitnes</h1>
 
   <a class="boton-wsp" href="https://wa.me/17273772877" target="_blank">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" width="25" height="25">
+    <img class="icono-wsp" src="https://cdn-icons-png.flaticon.com/512/733/733585.png">
     Toca aquí y recibe toda la información del Curso ahora mismo
   </a>
+
 </body>
 </html>
