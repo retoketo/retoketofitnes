@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Retoketofitnes</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+      font-family: Arial, sans-serif;
+      background: url('logo-retoketofitnes.jpg') no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .mensaje {
+      font-size: 2em;
+      font-weight: bold;
+      color: white;
+      text-shadow: 2px 2px 5px black;
+      animation: aparecer 1s ease-in-out alternate infinite;
+      margin-bottom: 30px;
+    }
+
+    @keyframes aparecer {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+
+    .boton-whatsapp {
+      background-color: #25D366;
+      color: white;
+      font-size: 1.2em;
+      padding: 15px 25px;
+      border: none;
+      border-radius: 50px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: transform 0.2s;
+    }
+
+    .boton-whatsapp:hover {
+      transform: scale(1.05);
+    }
+
+    .boton-whatsapp img {
+      width: 24px;
+      height: 24px;
+    }
+  </style>
+</head>
+<body>
+  <div class="mensaje">Bienvenidos a Retoketofitnes</div>
+  <a class="boton-whatsapp" href="https://wa.me/17273772877?text=Hola!%20Est%C3%A1s%20aqu%C3%AD%20por%20la%20informaci%C3%B3n%20del%20curso,%20dale%20a%20enviar">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+    Toca aquí y recibe toda la información del Curso ahora mismo
+  </a>
+</body>
+</html>
