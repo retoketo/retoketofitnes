@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Retoketofitnes</title>
   <style>
     body {
       margin: 0;
       padding: 0;
       height: 100vh;
-      background: url('logo-retoketofitnes.jpg') no-repeat center center fixed;
+      background: url('./logo-retoketofitnes.jpg') no-repeat center center fixed;
       background-size: cover;
       display: flex;
       flex-direction: column;
@@ -20,50 +20,49 @@
 
     h1 {
       color: white;
-      font-size: 48px;
-      text-shadow: 2px 2px 6px #000;
-      animation: aparecer 1.5s ease-in-out infinite alternate;
+      font-size: 45px;
+      font-weight: bold;
+      text-shadow: 3px 3px 8px black;
+      animation: parpadeo 2s ease-in-out infinite alternate;
     }
 
-    @keyframes aparecer {
-      from { opacity: 0.1; transform: scale(0.98); }
+    @keyframes parpadeo {
+      from { opacity: 0.4; transform: scale(0.98); }
       to   { opacity: 1; transform: scale(1); }
     }
 
-    a.boton-wsp {
-      margin-top: 30px;
+    .boton-wsp {
+      margin-top: 40px;
       text-decoration: none;
       color: white;
-      font-size: 24px;
-      font-weight: bold;
+      font-size: 22px;
       background-color: #25D366;
-      padding: 20px 30px;
+      padding: 16px 28px;
       border-radius: 40px;
-      display: inline-flex;
+      display: flex;
       align-items: center;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-      transition: transform 0.2s;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      transition: all 0.3s ease;
     }
 
-    a.boton-wsp:hover {
+    .boton-wsp:hover {
+      background-color: #1ebe5d;
       transform: scale(1.05);
     }
 
-    img.icono-wsp {
-      width: 32px;
-      height: 32px;
+    .icono-wsp {
+      width: 30px;
+      height: 30px;
       margin-right: 12px;
     }
   </style>
 </head>
 <body>
-
   <h1>Bienvenidos a Retoketofitnes</h1>
 
   <a class="boton-wsp" href="https://wa.me/17273772877" target="_blank">
-    <img class="icono-wsp" src="https://cdn-icons-png.flaticon.com/512/733/733585.png">
+    <img class="icono-wsp" src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" />
     Toca aquí y recibe toda la información del Curso ahora mismo
   </a>
-
 </body>
 </html>
